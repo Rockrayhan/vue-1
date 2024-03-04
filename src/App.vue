@@ -1,5 +1,6 @@
 <script setup>
 import ItemVue from './components/Item.vue';
+import TabsVue from './components/Tabs.vue';
 
 
 
@@ -7,9 +8,7 @@ import ItemVue from './components/Item.vue';
 
 <template>
   <header-item></header-item>
-<food-item food-name="Mango"></food-item>
-<ItemVue/>
-
+        <router-view></router-view>    
 <footer-item></footer-item>
 </template>
 
@@ -18,7 +17,9 @@ import ItemVue from './components/Item.vue';
 
 <script>
 </script>
-
-
 <style>
+section {
+  border: 2px solid salmon;
+  padding: 10px;
+}
 </style>
